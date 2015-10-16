@@ -17,7 +17,7 @@ Generates short urls for the document library app contents. This add-in works in
 ### Solution ###
 Solution | Author(s)
 ---------|----------
-localizer | Rajesh Sitaraman
+URL Shortner Lite | Rajesh Sitaraman
 
 ### Version history ###
 Version  | Date | Comments
