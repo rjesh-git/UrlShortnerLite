@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Document Library Controls Start here..-->
+  <!-- Ribbon Custom Action-->
+  <CustomAction Id="424C85CA-797F-478F-9E75-8940EB92D392.shorturl"
+                RegistrationType="List"
+                RegistrationId="101"
+                Location="CommandUI.Ribbon"
+                Sequence="10001"
+                Title="Generate Short Url">
+    <CommandUIExtension>
+      <CommandUIDefinitions>
+        <CommandUIDefinition Location="Ribbon.Documents.Share.Controls._children">
+          <Button Id="Ribbon.Documents.ShorturlButton"
+                  Alt="Generate short url for the item"
+                  Sequence="100"
+                  Command="Invoke_ShortUrl"
+                  LabelText="Short Url"
+                  TemplateAlias="o1"
+                  Image32by32="http://3.bp.blogspot.com/-YMVNPstlySk/UVvBRWG5x0I/AAAAAAAAAB8/IKbeywhzWiI/s1600/Shortner32x32.png"
+                  Image16by16="http://2.bp.blogspot.com/-zJ48KJuYIwI/UVvBQsY39zI/AAAAAAAAAB0/pWhfnUhMqck/s1600/Shortner16x16.png" />
+        </CommandUIDefinition>
+      </CommandUIDefinitions>
+      <CommandUIHandlers>
+        <CommandUIHandler
+          Command="Invoke_ShortUrl"
+          CommandAction="~appWebUrl/Pages/shortener.aspx?{StandardTokens}&amp;ListID={ListId}&amp;ItemID={SelectedItemId}&amp;Type=1"
+          EnabledScript="javascript:var EnableDisable = function() {
+          this.clientContext = SP.ClientContext.get_current();
+          this.selectedItems = SP.ListOperation.Selection.getSelectedItems(this.clientContext);
+          var ci = CountDictionary(selectedItems);
+          return (ci == 1);
+          };
+          EnableDisable();" />
+      </CommandUIHandlers>
+    </CommandUIExtension >
+  </CustomAction>
+  
+ <!--Custom Action for the ECB Menu-->
+  <CustomAction
+      Id="6CC52B9F-9867-491E-8A22-0729DA80E0C9.shorturl"
+      RegistrationType="List"
+      RegistrationId="101"
+      Location="EditControlBlock"
+      Sequence="10"
+      Title="Short Url">
+    <UrlAction Url="~appWebUrl/Pages/shortener.aspx?{StandardTokens}&amp;ListID={ListId}&amp;ItemID={ItemId}&amp;Type=1" />
+  </CustomAction>
+  <!-- Document Library Controls Ends here..-->
+  <!-- Custom List Controls Starts here-->
+  <!--Custom Action for the ECB Menu
+  <CustomAction
+      Id="D3D83555-6C53-46A5-A820-957CD4DDB4F5.shorturl"
+      RegistrationType="List"
+      RegistrationId="100"
+      Location="EditControlBlock"
+      Sequence="10001"
+      Title="Short Url">
+    <UrlAction Url="~appWebUrl/Pages/shortener.aspx?{StandardTokens}&amp;ListID={ListId}&amp;ItemID={ItemId}&amp;Type=2" />
+  </CustomAction>
+  Custom List Controls Ends here-->
+
+  <!--Custom Action for Site Actions-->
+  <!--<CustomAction
+  Id="7EC4594E-6645-4491-A204-21B80E23AFFB.addcomments"
+  GroupId="SiteActions"
+  Location="Microsoft.SharePoint.StandardMenu"
+  Sequence="2000"
+  Title="Add Comments"
+  Description="Add Comments" >
+    <UrlAction Url="~appWebUrl/Pages/addnewcomment.aspx?{StandardTokens}"/>
+  </CustomAction>--> 
+</Elements>

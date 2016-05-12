@@ -1,0 +1,42 @@
+﻿.header{
+   position: relative;
+   float: left;
+   left: 0.00%;
+   width: 100.00%;
+}
+.wrapper{
+   position: relative;
+   float: left;
+   left: 0.00%;
+   width: 100.00%;
+}
+.left{
+   position: relative;
+   float: left;
+   left: 0.50%;
+   width: 15.00%;
+}
+.main{
+   position: relative;
+   float: left;
+   left: 1.50%;
+   width: 61.00%;
+}
+.right{
+   position: relative;
+   float: right;
+   right: 0.50%;
+   width: 21.00%;
+}
+.footer{
+   position: relative;
+   float: left;
+   left: 0.00%;
+   width: 100.00%;
+}
+body {
+   border-width: 0px;
+   padding: 0px;
+   margin: 0px;
+   font-size: 90%;
+}

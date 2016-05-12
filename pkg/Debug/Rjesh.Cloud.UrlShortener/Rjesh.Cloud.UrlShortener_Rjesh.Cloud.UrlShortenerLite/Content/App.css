@@ -1,0 +1,68 @@
+﻿
+/*body{
+margin:0;
+padding:0;
+line-height: 1.5em;
+}
+
+b{font-size: 110%;}
+em{color: red;}
+
+#topsection{
+height: auto; 
+}
+
+#topsection h1{
+margin: 0;
+padding-top: 15px;
+}
+
+#contentwrapper{
+float: left;
+width: 100%;
+}
+
+#contentcolumn{
+margin: 0 200px 0 25%; 
+}
+
+#leftcolumn{
+float: left;
+width: 15%; 
+margin-left: -100%;
+
+}
+
+#rightcolumn{
+float: left;
+width: 200px; 
+margin-left: -200px; 
+
+}
+
+#footer{
+clear: left;
+width: 100%;
+
+color: #FFF;
+text-align: center;
+padding: 4px 0;
+}
+
+#footer a{
+
+}
+
+.innertube{
+margin: 10px; 
+margin-top: 0;
+}*/
+
+
+.focusedInput {
+    border-color: rgba(82,168,236,.8) ;
+    outline: 0;
+    outline: thin dotted \9;
+    -moz-box-shadow: 0 0 8px rgba(82,168,236,.6);
+    box-shadow: 0 0 8px rgba(82,168,236,.6) !important;
+}

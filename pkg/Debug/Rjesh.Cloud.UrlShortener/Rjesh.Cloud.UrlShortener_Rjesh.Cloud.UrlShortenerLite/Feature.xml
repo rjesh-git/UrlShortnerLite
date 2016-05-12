@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Description="Url Shortener Lite App feature." Id="941ebdc8-f768-4ec0-a8e6-1f2264d630ee" Scope="Web" Title="Rjesh.Cloud.UrlShortener Lite" Version="2.0.0.0">
+  <ElementManifests>
+    <ElementManifest Location="Pages\Elements.xml" />
+    <ElementFile Location="Pages\Default.aspx" />
+    <ElementFile Location="Pages\shortener.html" />
+    <ElementFile Location="Pages\shortener.aspx" />
+    <ElementManifest Location="Scripts\Elements.xml" />
+    <ElementFile Location="Scripts\jquery-1.6.2-vsdoc.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.min.js" />
+    <ElementFile Location="Scripts\jquery-1.6.2.js" />
+    <ElementFile Location="Scripts\App.min.js" />
+    <ElementManifest Location="Content\Elements.xml" />
+    <ElementFile Location="Content\App.css" />
+    <ElementFile Location="Content\main.css" />
+    <ElementManifest Location="Images\Elements.xml" />
+    <ElementFile Location="Images\AppLogo.png" />
+    <ElementFile Location="Images\AppTitle.png" />
+    <ElementFile Location="Images\Shortner16x16.png" />
+    <ElementFile Location="Images\Shortner32x32.png" />
+  </ElementManifests>
+  <UpgradeActions>
+    <VersionRange>
+      <ApplyElementManifests>
+        <ElementManifest Location="Pages\Elements.xml" />
+        <ElementManifest Location="Scripts\Elements.xml" />
+        <ElementManifest Location="Content\Elements.xml" />
+        <ElementManifest Location="Images\Elements.xml" />
+      </ApplyElementManifests>
+    </VersionRange>
+  </UpgradeActions>
+</Feature>

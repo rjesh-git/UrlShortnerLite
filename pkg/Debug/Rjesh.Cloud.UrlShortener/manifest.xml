@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f9682f35-395d-497e-bbe0-10bf2884d144" SharePointProductVersion="15.0">
+  <FeatureManifests>
+    <FeatureManifest Location="Rjesh.Cloud.UrlShortener_Rjesh.Cloud.UrlShortenerLite\Feature.xml" />
+  </FeatureManifests>
+</Solution>

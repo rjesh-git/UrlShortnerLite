@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f9682f35-395d-497e-bbe0-10bf2884d144" solutionId="f9682f35-395d-497e-bbe0-10bf2884d144" resetWebServer="false" sharePointProductVersion="15.0" name="Rjesh.Cloud.UrlShortener" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="941ebdc8-f768-4ec0-a8e6-1f2264d630ee" />
+  </features>
+</package>
